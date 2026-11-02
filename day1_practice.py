@@ -58,7 +58,7 @@ gg = pali("mada")
 print(gg)
 Level 5: Write a function that takes a list of numbers and
 returns both the smallest and the largest number together.'''
-def num(a):
+'''def num(a):
     smallest=a[0]
     largest=a[0]
     for i in a:
@@ -71,7 +71,50 @@ def num(a):
 
         
 gg=num([4, 5,1])
+print(gg)'''
+'''Write a function that takes a number n and returns the sum of all numbers from 1 up to n.'''
+
+'''def num(a):
+    total=0
+    for i in range(1,a+1):
+        total=total+i
+    return total
+gg=num(4)
 print(gg)
+Level 7: Write a function that takes a number n and returns its factorial.
+The factorial of n means multiplying all the numbers from 1 up to n.'''
+'''def fact(a):
+    total=1
+    for i in range(1,a+1):
+        total=total*i
+    return total
+gg=fact(4)
+print(gg)
+Level 8: Write a function that takes a word and
+returns how many vowels it has. The vowels are a, e, i, o, u.'''
+'''def vowels(a):
+    total=0
+    for i in a :
+        
+        if i in "aeiou":
+            total=total+1
+    return total
+gg=vowels("apple")
+print(gg)
+Level 9: Write a function that takes a list of numbers and
+returns a new list containing only the numbers that are greater than 10.    '''
+def great(a):
+    new_list=[]
+    for i in a:
+        if i >10:       
+            new_list.append(i)
+    return new_list
+gg=great([5, 12, 8, 20, 3])
+print(gg)
+        
+
+
+
 
     
         
